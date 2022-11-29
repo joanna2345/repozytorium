@@ -1,0 +1,126 @@
+// Biblioteka Bootstrap CSS
+@import "bootstrap.scss";
+// Font Nunito
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+$kolorstopki: #dcdc15;
+$a: #212529;
+$hover_a: #2fd46b;
+$text-color-btn: #fff;
+$font-size-title: 18px;
+$desc-color: #8492a6;
+.main-menu {
+    .main-menu__ul {
+        text-align: left;
+        .main-menu__ul__li {
+            display: inline-block;
+            
+            a {
+                text-decoration: none;
+                color: $a;
+                padding: 25px 15px;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                line-height: 24px;
+                text-transform: uppercase;
+                transition: all 0.5s linear;
+
+                &:hover {
+                    color: $hover_a;
+                    transition: all 0.5s linear;
+                }
+            }
+        }
+    }
+
+}
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    //min-height: 60px;
+    transition: height 0.3s linear;
+    //top: 20px;
+    background: #cbcbcb;
+    height: 80px;
+
+
+}
+
+
+
+.search_wrapper {
+    text-align: center;
+
+    .btn {
+        background-color: base.$btn-color;
+        padding: 10px 20px;
+        border-radius: 30px;
+        color: $text-color-btn;
+        border: none;
+    }
+    .search_field {
+        padding: 8px;
+        border-radius: 30px;
+        border: none;
+        box-shadow: 0 0 3px rgb(60 72 88 / 15%);
+    }
+}
+.help {
+    text-align: center;
+
+    .circle {
+        margin: 0 auto 30px auto;
+        box-shadow: 0 10px 25px rgba(60,72,88,.15);
+        display: block;
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        border-radius: 40px;
+       
+        .icon {
+            font-size: 22px;
+        }
+
+    }
+    .title {
+        font-size: $font-size-title;
+        text-decoration: none;
+        color: $a;
+    }
+    .desc {
+        color: $desc-color;
+    }
+    .help-col {
+        padding: 20px;
+
+        &:hover {
+            box-shadow: 0 10px 25px rgba(60,72,88,.15);
+            transition: all .5s ease;
+
+            .icon {
+                color: $hover_a;
+                transition: all .5s ease;
+            }
+            a {
+                color: $hover_a;
+                transition: all .5s ease;
+            }
+        }
+    }
+   
+}
+
+  .footer{
+    color: $kolorstopki;
+  }
+
